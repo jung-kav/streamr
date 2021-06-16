@@ -6,7 +6,7 @@ const img = "https://cdn.shopify.com/s/files/1/0757/9955/files/empty-state.svg";
 const Index = () => (
   <Page>
     <TitleBar
-      title="Streamr"
+      title="Streamr Admin"
       primaryAction={{
         content: "Select products",
       }}
