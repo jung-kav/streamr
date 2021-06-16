@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "ngrok": "^4.0.1",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "webpack": "^5.39.0"
   }
 }
