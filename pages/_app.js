@@ -5,7 +5,6 @@ import { AppProvider } from "@shopify/polaris";
 import { Provider } from "@shopify/app-bridge-react";
 import "@shopify/polaris/dist/styles.css";
 import translations from "@shopify/polaris/locales/en.json";
-import ClientRouter from "../components/ClientRouter";
 
 class StreamrAdminApp extends App {
   render() {
@@ -15,11 +14,10 @@ class StreamrAdminApp extends App {
     return (
       <React.Fragment>
         <Head>
-          <title>Sample App</title>
+          <title>Streamr Admin</title>
           <meta charSet="utf-8" />
         </Head>
         <Provider config={config}>
-          <ClientRouter />
           <AppProvider i18n={translations}>
             <Component {...pageProps} />
           </AppProvider>
