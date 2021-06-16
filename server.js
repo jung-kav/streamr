@@ -65,6 +65,6 @@ app.prepare().then(() => {
   server.use(router.routes());
 
   server.listen(port, () => {
-    console.log(`> Ready on http://localhost:${port}`);
+    console.log(`> Ready on https://${Shopify.Context.HOST_NAME}`);
   });
 });
