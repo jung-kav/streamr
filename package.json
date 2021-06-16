@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "tunnel": "ngrok http 3000",
-    "dev": "nodemon server.js",
+    "dev": "nodemon server.js --watch pages --watch components",
     "build": "next build",
     "start": "NODE_ENV=production node server.js"
   },
