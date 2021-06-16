@@ -1,9 +1,16 @@
+import { TitleBar } from "@shopify/app-bridge-react";
 import { Layout, Page, EmptyState } from "@shopify/polaris";
 
 const img = "https://cdn.shopify.com/s/files/1/0757/9955/files/empty-state.svg";
 
 const Index = () => (
   <Page>
+    <TitleBar
+      title="Streamr"
+      primaryAction={{
+        content: "Select products",
+      }}
+    />
     <Layout>
       <EmptyState
         heading="Discount your products temporarily"

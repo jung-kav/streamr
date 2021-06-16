@@ -6,6 +6,8 @@ import { Provider as AppBridgeProvider } from "@shopify/app-bridge-react";
 import "@shopify/polaris/dist/styles.css";
 import translations from "@shopify/polaris/locales/en.json";
 
+import ClientRouter from "../components/ClientRouter";
+
 class StreamrAdminApp extends App {
   render() {
     const { Component, pageProps, host } = this.props;
@@ -18,6 +20,7 @@ class StreamrAdminApp extends App {
           <meta charSet="utf-8" />
         </Head>
         <AppBridgeProvider config={config}>
+          <ClientRouter />
           <PolarisProvider i18n={translations}>
             <Component {...pageProps} />
           </PolarisProvider>
