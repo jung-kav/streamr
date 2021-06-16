@@ -34,9 +34,10 @@ app.prepare().then(() => {
     createShopifyAuth({
       afterAuth(ctx) {
         const { shop, scope } = ctx.state.shopify;
+        const host = Buffer.from(`${shop}/admin`).toString("base64");
         ACTIVE_SHOPIFY_SHOPS[shop] = scope;
 
-        ctx.redirect(`/?shop=${shop}`);
+        ctx.redirect(`/?shop=${shop}&host=${host}`);
       },
     })
   );
