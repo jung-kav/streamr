@@ -1,9 +1,12 @@
 import { Component } from "react";
-import videojs from "video.js";
+import videojs, { VideoJsPlayerOptions } from "video.js";
 import awsvideoconfig from "./aws-video-exports";
 import "video.js/dist/video-js.css";
 
-class VideoPlayer extends Component {
+class VideoPlayer extends Component<VideoJsPlayerOptions> {
+  player: any;
+  videoNode: any;
+
   componentDidMount() {
     this.player = videojs(this.videoNode, this.props);
   }
