@@ -40,5 +40,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@aws-amplify/cli": "^5.1.0",
+    "amplify-category-video": "^3.8.2"
   }
 }

@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-streamr-dev-165652-authRole",
+      "UnauthRoleArn": "arn:aws:iam::333454872067:role/amplify-streamr-dev-165652-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::333454872067:role/amplify-streamr-dev-165652-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-streamr-dev-165652-deployment",
+      "UnauthRoleName": "amplify-streamr-dev-165652-unauthRole",
+      "StackName": "amplify-streamr-dev-165652",
+      "StackId": "arn:aws:cloudformation:us-west-2:333454872067:stack/amplify-streamr-dev-165652/039a4b90-dac8-11eb-b1ec-0a0fbc569219",
+      "AmplifyAppId": "d6gg1j80sv7ip"
+    }
+  }
+}
