@@ -1,3 +1,9 @@
 {
-  "video": {}
+  "video": {
+    "streamr": {
+      "service": "video",
+      "serviceType": "livestream",
+      "providerPlugin": "awscloudformation"
+    }
+  }
 }
